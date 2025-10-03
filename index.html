@@ -4,10 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Landing Page 2</title>
 </head>
 
 <body>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto p-6 bg-slate-400">
+        <div class="flex flex-shrink-1 flex-wrap justify-around 2xl:justify-between">
+            <div>
+                <img src="assets/Hero_Page/Logo.png" alt="Logo">
+            </div>
+            <div class="flex flex-wrap justify-evenly w-auto items-center gap-2  md:gap-6">
+                <nav class="flex gap-6">
+                    <li class="list-none">Home</li>
+                    <li class="list-none">About</li>
+                    <li class="list-none">Courses</li>
+                    <li class="list-none">Contact</li>
+                </nav>
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <img src="assets/Hero_Page/Card.svg" alt="Cart">
+                        <img src="assets/Hero_Page/span.widget_cart_counter_number.svg" alt="Count"
+                            class="absolute -top-2 -right-2">
+                    </div>
+                    <img src="assets/Hero_Page/User_Logo.svg" alt="User">
+                    <img src="assets/Hero_Page/Search.svg" alt="Search">
+                </div>
+                <div class="flex gap-4">
+                    <button class="border-b">Login</button>
+                    <button
+                        class="bg-gradient-to-r from-[#083F9B] to-[#7F56D9] text-white p-2 rounded-md px-3">Signup</button>
+                </div>
+            </div>
+        </div>
+    </header>
 
 </body>
 
