@@ -15,6 +15,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
     <title>Landing Page 2</title>
 
@@ -23,6 +28,7 @@
             -font-Righteous: "Righteous", sans-serif;
             -font-Saira: "Saira", sans-serif;
             -font-Rowdyies: "Rowdies", sans-serif;
+            -font-Inter: "Inter", sans-serif;
         }
     </style>
 
@@ -62,15 +68,14 @@
     </div>
 
     <!-- Hero Section -->
-    <header class="container flex-col max-w-full px-6 bg-gradient-to-b from-[#04016C] to-[#4A16BD]">
+    <header class="container flex flex-col max-w-full px-6 min-h-screen bg-gradient-to-b from-[#04016C] to-[#4A16BD]">
 
         <!-- Hero Section : Content & Images -->
-        <section>
-
-            <div>
-                <div>
+        <section class="flex flex-wrap justify-between w-full py-14">
+            <div class="flex flex-wrap grow items-start w-[500px]">
+                <div class="">
                     <h4 class="font-[Righteous] font-normal text-lg text-white">Successful coaches are visionaries</h4>
-                    <h1 class="font-[Righteous] font-normal text-[80px] text-white">Good <span
+                    <h1 class="font-[Righteous] font-normal text-[70px] text-white leading-tight">Good <span
                             class="text-[#0E38CD]">coaching</span> is good teaching &
                         nothing else.
                     </h1>
@@ -93,24 +98,29 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div>
+            <!-- Images Part -->
+            <div class="w-[400px] relative flex justify-end">
+                <img src="assets/Hero_Page/brunette-woman-hugging-laptop 1.png" alt="Women"
+                    class="relative z-50 mix-blend-darken max-h-[550px]">
+                <img src="assets/Hero_Page/White_Light.png" alt="White_Light"
+                    class="">
+
+                <div class="flex absolute left-0 h-auto gap-4 items-center w-[200px]">
                     <img src="assets/Hero_Page/Line.png" alt="Line">
                     <div>
-                        <h1>Shyam</h1>
-                        <p>In a coaching role, you ask the questions and rely more on your staff, who become the
+                        <h1 class="font-[Rowdies] font-normal text-base text-white">Shyam</h1>
+                        <p class="font-[Righteous] font-normal text-base text-white"> In a coaching role, you ask the
+                            questions and
+                            rely more on your staff, who become the
                             experts, to
                             provide the information.</p>
-                        <span>4.9</span>
+                        <span class="font-[Inter] font-bold text-xs text-[#0094E7]">4.9</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Images Part -->
-            <div>
-                <img src="assets/Hero_Page/brunette-woman-hugging-laptop 1.png" alt="Women">
-                <img src="assets/Hero_Page/White_Light.png" alt="White_Light">
-            </div>
 
         </section>
 
