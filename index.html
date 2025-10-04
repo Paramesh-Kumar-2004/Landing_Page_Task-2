@@ -60,7 +60,7 @@
             <div class="flex flex-wrap justify-around gap-4">
                 <button class="border-b font-[Saira] font-medium text-xl break-words">Login</button>
                 <button
-                    class="bg-gradient-to-r shrink min-w-0 from-[#083F9B] to-[#7F56D9] text-white p-2 rounded-md px-3 break-words font-[Saira] font-medium text-xl">
+                    class="bg-gradient-to-r from-[#083F9B] to-[#7F56D9] shrink min-w-0 text-white p-2 rounded-md px-3 break-words font-[Saira] font-medium text-xl">
                     Signup
                 </button>
             </div>
@@ -68,33 +68,33 @@
     </div>
 
     <!-- Hero Section -->
-    <header class="container flex flex-col max-w-full px-6 min-h-screen bg-gradient-to-b from-[#04016C] to-[#4A16BD]">
+    <header class="container flex flex-col max-w-full px-6 min-h-[90vh] bg-gradient-to-b from-[#04016C] to-[#4A16BD]">
 
         <!-- Hero Section : Content & Images -->
-        <section class="flex flex-wrap justify-between w-full pt-10">
+        <section class="flex flex-wrap justify-around lg:justify-between w-full pt-10">
 
             <div class="flex grow flex-wrap items-start w-[500px]">
-                <div class="">
+                <div class="shrink">
                     <h4 class="font-[Righteous] font-normal text-lg text-white">Successful coaches are visionaries</h4>
-                    <h1 class="font-[Righteous] font-normal text-[70px] text-white leading-tight">Good <span
-                            class="text-[#0E38CD]">coaching</span> is good teaching &
+                    <h1 class="font-[Righteous] font-normal text-4xl md:text-[70px] text-white leading-tight">
+                        Good <span class="text-[#0E38CD]">coaching</span> is good teaching &
                         nothing else.
                     </h1>
                     <div class="flex items-center gap-6">
                         <button
                             class="font-normal font-[Righteous] text-lg py-2 px-4 border-2 border-white rounded-xl text-white">View
                             Courses</button>
-                        <h4 class="text-white">Get Free Consultation</h4>
+                        <h4 class="text-white flex break-words">Get Free Consultation</h4>
                     </div>
                     <div class="flex items-center max-w-max bg-white p-2 my-7 rounded-lg">
                         <div class="w-auto">
                             <input type="text" placeholder="What do you want to learn today?"
-                                class="font-[Righteous] font-normal text-[18px] grow shrink border-none focus:outline-none rounded-lg min-w-[300px] p-1">
+                                class="font-[Righteous] font-normal text-[18px] shrink border-none focus:outline-none rounded-lg w-[100px] sm:w-[300px] p-1">
                         </div>
                         <div>
                             <div class="flex bg-gradient-to-r from-[#3023B2] to-[#7F56D9] p-2 rounded-lg">
-                                <img src="assets/Hero_Page/Search.svg" class="w-5">
-                                <button class="font-[Righteous] font-normal text-[15px] pl-1">Search</button>
+                                <img src="assets/Hero_Page/Search.svg">
+                                <button class="font-[Righteous] font-normal text-[15px] pl-1 text-white">Search</button>
                             </div>
                         </div>
                     </div>
@@ -102,15 +102,13 @@
             </div>
 
             <!-- Images Part -->
-
-
             <div class="w-[450px] h-[500px] relative flex justify-end">
 
                 <div class="relative">
-                    <img src="assets/Hero_Page/White_Light.png" alt="White_Light" class="blur-sm">
+                    <img src="assets/Hero_Page/White_Light.png" alt="White_Light" class="blur-sm w-[100%]">
 
                     <img src=" assets/Hero_Page/brunette-woman-hugging-laptop 2.svg" alt="Women"
-                        class="z-50 mix-blend-darken w-72 absolute bottom-6 right-16 ">
+                        class="z-50 mix-blend-darken top-10 w-[60%] absolute sm:bottom-6 bottom-28 sm:right-10 right-0">
                 </div>
 
                 <div class="flex absolute left-0 h-auto gap-4 items-center w-[200px]">
@@ -127,22 +125,25 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
-
-        <!-- Bottom Cards -->
-        <div class="flex flex-wrap lg:justify-between justify-around">
-            <img src="assets/Community/Spotify_1.png" alt="Spotify_1">
-            <img src="assets/Community/Amazon_1.png" alt="Amazon_1">
-            <img src="assets/Community/Spotify_2.png" alt="Spotify_2">
-            <img src="assets/Community/Cisco.png" alt="Cisco">
-            <img src="assets/Community/Logitech.png" alt="Logitech">
-            <img src="assets/Community/Amazon_2.png" alt="Amazon_2">
-        </div>
-
-
     </header>
+
+    <!-- Bottom Cards -->
+    <div
+        class="flex w-full flex-wrap justify-evenly gap-4 items-center h-24 bg-gradient-to-b from-[#2E08C7] via-[#5608C7] to-[#7E08C7]">
+        <img src=" assets/Community/Spotify_1.png" alt="Spotify_1" class="w-24 h-10">
+        <img src="assets/Community/Amazon_1.png" alt="Amazon_1" class="w-24 h-10">
+        <img src="assets/Community/Spotify_2.png" alt="Spotify_2" class="w-24 h-10">
+        <img src="assets/Community/Cisco.png" alt="Cisco" class="w-24 h-10">
+        <img src="assets/Community/Logitech.png" alt="Logitech" class="w-24 h-10">
+        <img src="assets/Community/Amazon_2.png" alt="Amazon_2" class="w-24 h-10">
+    </div>
+
+
+    <!-- Page 2  -->
+    <section>
+
+    </section>
 
 
 </body>
