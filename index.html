@@ -5,62 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
     <title>Landing Page 2</title>
+
+    <style>
+        @theme {
+            -font-Righteous: "Righteous", sans-serif;
+            -font-Saira: "Saira", sans-serif;
+            -font-Rowdyies: "Rowdies", sans-serif;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <!-- Hero Section -->
-    <header class="container flex-col max-w-full px-6 bg-cyan-200">
-        <!-- Nav Bar -->
-        <div class="flex flex-wrap justify-around lg:justify-between">
-            <div>
-                <img src="assets/Hero_Page/Logo.png" alt="Logo">
+    <!-- Nav Bar -->
+    <div class="flex flex-wrap justify-around lg:justify-between bg-white pr-4">
+        <div>
+            <img src="assets/Hero_Page/Logo.png" alt="Logo">
+        </div>
+        <div class="flex grow shrink flex-wrap justify-around md:justify-between items-center gap-2 max-w-2xl">
+            <nav class="flex flex-wrap justify-around gap-6">
+                <li class="list-none font-[Righteous] font-normal text-xl break-words">Home</li>
+                <li class="list-none font-[Righteous] font-normal text-xl break-words">About</li>
+                <li class="list-none font-[Righteous] font-normal text-xl break-words">Courses</li>
+                <li class="list-none font-[Righteous] font-normal text-xl break-words">Contact</li>
+            </nav>
+            <div class="flex flex-wrap justify-around gap-4">
+                <div class="relative">
+                    <img src="assets/Hero_Page/Card.svg" alt="Cart">
+                    <img src="assets/Hero_Page/span.widget_cart_counter_number.svg" alt="Count"
+                        class="absolute -top-2 -right-2">
+                </div>
+                <img src="assets/Hero_Page/User_Logo.svg" alt="User">
+                <img src="assets/Hero_Page/Search.svg" alt="Search">
             </div>
-            <div class="flex grow shrink flex-wrap justify-around md:justify-between items-center gap-2 max-w-2xl">
-                <nav class="flex flex-wrap justify-around gap-6">
-                    <li class="list-none shrink">Home</li>
-                    <li class="list-none">About</li>
-                    <li class="list-none">Courses</li>
-                    <li class="list-none">Contact</li>
-                </nav>
-                <div class="flex flex-wrap justify-around gap-4">
-                    <div class="relative">
-                        <img src="assets/Hero_Page/Card.svg" alt="Cart">
-                        <img src="assets/Hero_Page/span.widget_cart_counter_number.svg" alt="Count"
-                            class="absolute -top-2 -right-2">
-                    </div>
-                    <img src="assets/Hero_Page/User_Logo.svg" alt="User">
-                    <img src="assets/Hero_Page/Search.svg" alt="Search">
-                </div>
-                <div class="flex flex-wrap justify-around gap-4">
-                    <button class="border-b">Login</button>
-                    <button
-                        class="bg-gradient-to-r shrink min-w-0 from-[#083F9B] to-[#7F56D9] text-white p-2 rounded-md px-3 break-words">
-                        Signup
-                    </button>
-                </div>
+            <div class="flex flex-wrap justify-around gap-4">
+                <button class="border-b font-[Saira] font-medium text-xl break-words">Login</button>
+                <button
+                    class="bg-gradient-to-r shrink min-w-0 from-[#083F9B] to-[#7F56D9] text-white p-2 rounded-md px-3 break-words font-[Saira] font-medium text-xl">
+                    Signup
+                </button>
             </div>
         </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="container flex-col max-w-full px-6 bg-gradient-to-b from-[#04016C] to-[#4A16BD]">
 
         <!-- Hero Section : Content & Images -->
         <section>
 
             <div>
-
                 <div>
-                    <h4>Successful coaches are visionaries</h4>
-                    <h1>Good coaching is good teaching & nothing else.</h1>
-                    <div>
-                        <button>View Courses</button>
-                        <h4>Get Free Consultation</h4>
+                    <h4 class="font-[Righteous] font-normal text-lg text-white">Successful coaches are visionaries</h4>
+                    <h1 class="font-[Righteous] font-normal text-[80px] text-white">Good <span
+                            class="text-[#0E38CD]">coaching</span> is good teaching &
+                        nothing else.
+                    </h1>
+                    <div class="flex items-center gap-6">
+                        <button
+                            class="font-normal font-[Righteous] text-lg py-2 px-4 border-2 border-white rounded-xl text-white">View
+                            Courses</button>
+                        <h4 class="text-white">Get Free Consultation</h4>
                     </div>
-                    <div>
-                        <input type="text" placeholder="What do you want to learn today?">
+                    <div class="flex items-center max-w-max bg-white p-2 my-7 rounded-lg">
+                        <div class="w-auto">
+                            <input type="text" placeholder="What do you want to learn today?"
+                                class="font-[Righteous] font-normal text-[18px] grow shrink border-none focus:outline-none rounded-lg min-w-[300px] p-1">
+                        </div>
                         <div>
-                            <div>
-                                <img src="assets/Hero_Page/Search.svg">
-                                <button>Search</button>
+                            <div class="flex bg-gradient-to-r from-[#3023B2] to-[#7F56D9] p-2 rounded-lg">
+                                <img src="assets/Hero_Page/Search.svg" class="w-5">
+                                <button class="font-[Righteous] font-normal text-[15px] pl-1">Search</button>
                             </div>
                         </div>
                     </div>
@@ -85,7 +113,6 @@
             </div>
 
         </section>
-
 
         <!--        Bottom Cards
         <section>
